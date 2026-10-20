@@ -1,0 +1,25 @@
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env*.local
+
+# Cloudflare Wrangler
+.wrangler/
+
+# Playwright MCP artifacts
+.playwright-mcp/
+*.png
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Large textbook binaries (keep safely on local disk, do not commit 200MB+ to git history)
+*.pdf
+temp_*/

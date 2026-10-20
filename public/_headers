@@ -1,0 +1,15 @@
+# Cloudflare Pages Custom Security & Caching Headers
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Cache static hashed assets for 1 year
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache fonts and static media
+/*.svg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
